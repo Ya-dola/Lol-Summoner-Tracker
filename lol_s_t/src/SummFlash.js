@@ -3,16 +3,20 @@ import {Box, Clock, Image} from "grommet";
 import FlashIcon from "./summs_icons/flash.png";
 
 
-class Summoner extends React.Component {
+class SummFlash extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            run: false
+            run: "backward",
+            time: "T00:05:00",
+            clicked: false
         };
     }
 
-    startTimer = () => {
-        this.setState({run: "backward"});
+    summClicked = () => {
+        this.state.clicked ?
+            this.setState({clicked: false})
+            : this.setState({clicked: true})
     }
 
     render() {
@@ -24,9 +28,12 @@ class Summoner extends React.Component {
                          overflow="visible"
                          alignSelf="center" pad="small" responsive wrap>
                         <Image src={FlashIcon} fit="contain" width={"100px"}
-                               onClick={this.startTimer}/>
+                               onClick={this.summClicked}/>
                     </Box>
-                    <Clock precision="seconds" run={this.state.run} time="PT0H5M00S" size="large" type="digital"/>
+                    {this.state.clicked ?
+                        <Clock precision="seconds" run={this.state.run} time={this.state.time} size="large"
+                               type="digital"/>
+                        : null}
                 </Box>
             </Fragment>
         );
@@ -34,4 +41,4 @@ class Summoner extends React.Component {
 
 }
 
-export default Summoner;
+export default SummFlash;

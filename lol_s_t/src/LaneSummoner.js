@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import {Box, Image, Text} from "grommet";
-import Summoner from "./Summoner";
+import SummFlash from "./SummFlash";
 import TopIcon from "./pos_icons/icon-position-top.png"
 
 function LaneSummoner() {
@@ -15,8 +15,8 @@ function LaneSummoner() {
                         Top
                     </Text>
                 </Box>
-                <Summoner/>
-                <Summoner/>
+                <SummFlash/>
+                <SummFlash/>
             </Box>
         </Fragment>
     );
