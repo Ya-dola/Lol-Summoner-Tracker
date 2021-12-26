@@ -40,7 +40,7 @@ class SummFlash extends React.Component {
                                type="digital"/>
                         : null}
                     {this.state.clicked ?
-                        <SummMeter {...this.state}/>
+                        <SummMeter {...this.state} summClicked={this.summClicked}/>
                         : null}
                 </Box>
             </Fragment>
