@@ -33,13 +33,13 @@ class SummFlash extends React.Component {
     render() {
         return (
             <Fragment>
-                <Box align="center" justify="center" width="medium" height="small" margin="small" direction="column"
+                <Box align="center" justify="center" width="medium" height="auto" margin="small" direction="column"
                      gap="medium"
                      responsive wrap overflow="auto">
                     <Box align="center" justify="center" direction="column" width="medium" hoverIndicator
                          overflow="visible"
                          alignSelf="center" pad="small" responsive wrap>
-                        <Image src={FlashIcon} fit="contain" width={"100px"}
+                        <Image src={FlashIcon} fit="contain" width={"90px"}
                                onClick={this.summClicked}/>
                     </Box>
                     {this.state.clicked ?
