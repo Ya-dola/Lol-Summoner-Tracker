@@ -14,6 +14,13 @@ class SummFlash extends React.Component {
             barValue: 299,
             barBp1: 120,
             barBp2: 60
+
+            // DEBUG Values
+            // time: "T00:00:10",
+            // maxBarValue: 10,
+            // barValue: 9,
+            // barBp1: 120,
+            // barBp2: 60
         };
     }
 
