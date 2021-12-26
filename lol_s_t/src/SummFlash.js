@@ -24,7 +24,8 @@ class SummFlash extends React.Component {
     render() {
         return (
             <Fragment>
-                <Box align="center" justify="center" width="medium" height="small" direction="column" gap="medium"
+                <Box align="center" justify="center" width="medium" height="small" margin="small" direction="column"
+                     gap="medium"
                      responsive wrap overflow="auto">
                     <Box align="center" justify="center" direction="column" width="medium" hoverIndicator
                          overflow="visible"
