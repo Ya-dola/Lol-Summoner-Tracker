@@ -1,7 +1,7 @@
-import React, {Fragment} from "react";
-import {Box, Clock, Image} from "grommet";
+import React, {Fragment, useEffect, useRef, useState} from "react";
+import {Box, Clock, Image, Meter} from "grommet";
 import FlashIcon from "./summs_icons/flash.png";
-
+import SummMeter from "./SummMeter";
 
 class SummFlash extends React.Component {
     constructor(props, context) {
@@ -9,8 +9,10 @@ class SummFlash extends React.Component {
         this.state = {
             run: "backward",
             time: "T00:05:00",
-            clicked: false
+            clicked: false,
+            barValue: 300
         };
+        let timer = null;
     }
 
     summClicked = () => {
@@ -33,6 +35,9 @@ class SummFlash extends React.Component {
                     {this.state.clicked ?
                         <Clock precision="seconds" run={this.state.run} time={this.state.time} size="large"
                                type="digital"/>
+                        : null}
+                    {this.state.clicked ?
+                        <SummMeter/>
                         : null}
                 </Box>
             </Fragment>

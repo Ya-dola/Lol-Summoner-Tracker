@@ -16,7 +16,6 @@ function LaneSummoner() {
                     </Text>
                 </Box>
                 <SummFlash/>
-                <SummFlash/>
             </Box>
         </Fragment>
     );
