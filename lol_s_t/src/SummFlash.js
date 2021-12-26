@@ -7,12 +7,14 @@ class SummFlash extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
+            clicked: false,
             run: "backward",
             time: "T00:05:00",
-            clicked: false,
-            barValue: 300
+            maxBarValue: 300,
+            barValue: 299,
+            barBp1: 120,
+            barBp2: 60
         };
-        let timer = null;
     }
 
     summClicked = () => {
@@ -38,7 +40,7 @@ class SummFlash extends React.Component {
                                type="digital"/>
                         : null}
                     {this.state.clicked ?
-                        <SummMeter/>
+                        <SummMeter {...this.state}/>
                         : null}
                 </Box>
             </Fragment>

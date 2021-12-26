@@ -1,8 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Meter} from "grommet";
 
-function SummMeter() {
-    const [value, setValue] = useState(299);
+function SummMeter(props) {
+    const [value, setValue] = useState(props.barValue);
 
     const timer = useRef();
 
@@ -17,10 +17,11 @@ function SummMeter() {
         clearTimeout(timer.current);
     }, [],);
 
-    return (<Meter type={"bar"} max={300}
+    return (<Meter type={"bar"} max={props.maxBarValue}
                    values={[{
                        value,
-                       color: value > 120 ? 'status-ok' : value > 60 ? 'status-warning' : 'status-error'
+                       color: value > props.barBp1 ? 'status-ok' :
+                           value > props.barBp2 ? 'status-warning' : 'status-error'
                    }]}/>);
 }
 
