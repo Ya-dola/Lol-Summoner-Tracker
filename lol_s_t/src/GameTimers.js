@@ -1,6 +1,7 @@
 import {Fragment} from "react";
 import LaneSummonerTimer from "./LaneSummonerTimer";
 import HeaderBar from "./HeaderBar";
+import GameSetupButton from "./GameSetupButton";
 import {Main} from "grommet";
 import {useLocation} from "react-router-dom";
 import TopIcon from "./pos_icons/icon-position-top.png"
@@ -9,14 +10,14 @@ import MidIcon from "./pos_icons/icon-position-middle.png"
 import BotIcon from "./pos_icons/icon-position-bottom.png"
 import SuppIcon from "./pos_icons/icon-position-utility.png"
 
-function Timers() {
+function GameTimers() {
     let timerState = useLocation().state;
 
     return (
         <Fragment>
             <Main fill="vertical" direction="column" justify="start" align="center" overflow="hidden">
                 <HeaderBar/>
-                
+
                 {/*Top Summoner Timer*/}
                 <LaneSummonerTimer lane={"Top"} laneIcon={TopIcon}
                                    summFlash={timerState.summsTopFlash}
@@ -77,6 +78,9 @@ function Timers() {
                                    summCleanse={timerState.summsSuppCleanse}
                                    summSmite={timerState.summsSuppSmite}/>
 
+                {/*Game Setup Button to go back to Starting Page*/}
+                <GameSetupButton/>
+
                 {/*Debug*/}
                 {/*<Text>Top Flash: {timerState.summsTopFlash ? "True" : "False"}</Text>*/}
                 {/*<Text>Top Ignite: {timerState.summsTopIgnite ? "True" : "False"}</Text>*/}
@@ -92,4 +96,4 @@ function Timers() {
     );
 }
 
-export default Timers;
+export default GameTimers;

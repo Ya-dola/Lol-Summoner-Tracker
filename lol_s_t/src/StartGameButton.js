@@ -7,7 +7,7 @@ function StartGameButton(props) {
     return(
       <Fragment>
           {/*Start Game Button*/}
-          <Link to={"/timers"} state={{
+          <Link to={"/gameTimers"} state={{
               // Top Summoner Spells States
               summsTopFlash: props.summsTopFlash,
               summsTopIgnite: props.summsTopIgnite,

@@ -2,8 +2,7 @@ import React from 'react';
 import {Routes, Route, BrowserRouter} from "react-router-dom";
 import {Grommet} from 'grommet';
 import Home from "./Home";
-import Timers from "./Timers";
-import TopIcon from "./pos_icons/icon-position-top.png"
+import GameTimers from "./GameTimers";
 
 // import './App.css';
 
@@ -13,7 +12,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/timers" element={<Timers/>}/>
+                    <Route path="/gameTimers" element={<GameTimers/>}/>
                     <Route path="*" element={<Home/>}/>
                 </Routes>
             </BrowserRouter>

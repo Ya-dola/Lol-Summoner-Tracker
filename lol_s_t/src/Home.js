@@ -1,15 +1,13 @@
 import React, {Fragment, useState} from 'react';
-import {Link} from "react-router-dom";
-import {Button, Main} from "grommet";
-import {Gamepad} from "grommet-icons";
+import {Main} from "grommet";
 import HeaderBar from "./HeaderBar";
 import LaneSummonerSelect from "./LaneSummonerSelect";
+import StartGameButton from "./StartGameButton";
 import TopIcon from "./pos_icons/icon-position-top.png"
 import JgIcon from "./pos_icons/icon-position-jungle.png"
 import MidIcon from "./pos_icons/icon-position-middle.png"
 import BotIcon from "./pos_icons/icon-position-bottom.png"
 import SuppIcon from "./pos_icons/icon-position-utility.png"
-import StartGameButton from "./StartGameButton";
 
 function Home() {
 
