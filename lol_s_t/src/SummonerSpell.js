@@ -33,11 +33,9 @@ class SummonerSpell extends React.Component {
         return (
             <Fragment>
                 <Box align="center" justify="center" width="medium" height="auto" margin="small" direction="column"
-                     gap="medium"
-                     responsive wrap overflow="hidden">
-                    <Box align="center" justify="center" direction="column" width="medium" hoverIndicator
-                         overflow="hidden"
-                         alignSelf="center" pad="small" responsive wrap>
+                     gap="xxsmall" overflow="hidden" responsive wrap>
+                    <Box align="center" justify="center" direction="column" width="medium"
+                         overflow="hidden" alignSelf="center" pad="small" responsive wrap>
                         <Image src={this.props.summIcon} fit="contain" width={"100px"}
                                onClick={this.summClicked}/>
                     </Box>

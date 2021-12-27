@@ -5,12 +5,12 @@ function LaneSummonerSelect(props) {
     return (
         <Fragment>
             {/*Role Row*/}
-            <Box align="center" justify="center" direction="row" pad="small" margin="small" overflow="hidden"
-                 responsive width="large">
+            <Box align="center" justify="center" direction="row" pad="small" width="large" margin="xxxsmall"
+                 overflow="hidden" border={"horizontal"} fill={"horizontal"} responsive>
 
                 {/*Lane Summoner Information*/}
                 <Box align="center" justify="center" width="medium" height="small" direction="column" gap="medium"
-                     responsive wrap overflow="hidden">
+                     overflow="hidden" responsive wrap>
                     <Image src={props.laneIcon} fit="contain" width={"100px"}/>
                     <Text textAlign="start" size="large">
                         {props.lane}

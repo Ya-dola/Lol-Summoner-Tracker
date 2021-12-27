@@ -15,8 +15,8 @@ function LaneSummonerTimer(props) {
     return (
         <Fragment>
             {/*Role Row*/}
-            <Box align="center" justify="center" direction="row" pad="small" margin="small" overflow="hidden"
-                 responsive width="large">
+            <Box align="center" justify="center" direction="row" pad="small" width="large" margin="xxxsmall"
+                 overflow="hidden" border={"horizontal"} fill={"horizontal"} responsive>
 
                 {/*Lane Summoner Information*/}
                 <Box align="center" justify="center" width="medium" height="small" direction="column" gap="medium"
