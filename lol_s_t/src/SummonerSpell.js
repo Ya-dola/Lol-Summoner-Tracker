@@ -1,19 +1,18 @@
 import React, {Fragment} from "react";
 import {Box, Clock, Image} from "grommet";
-import FlashIcon from "./summs_icons/flash.png";
 import SummMeter from "./SummMeter";
 
-class SummFlash extends React.Component {
+class SummonerSpell extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
             clicked: false,
             run: "backward",
-            time: "T00:05:00",
-            maxBarValue: 300,
-            barValue: 299,
-            barBp1: 120,
-            barBp2: 60
+            time: this.props.time,
+            maxBarValue: this.props.maxBarValue,
+            barValue: this.props.barValue,
+            barBp1: this.props.barBp1,
+            barBp2: this.props.barBp2
 
             // DEBUG Values
             // time: "T00:00:10",
@@ -39,7 +38,7 @@ class SummFlash extends React.Component {
                     <Box align="center" justify="center" direction="column" width="medium" hoverIndicator
                          overflow="hidden"
                          alignSelf="center" pad="small" responsive wrap>
-                        <Image src={FlashIcon} fit="contain" width={"100px"}
+                        <Image src={this.props.summIcon} fit="contain" width={"100px"}
                                onClick={this.summClicked}/>
                     </Box>
                     {this.state.clicked ?
@@ -55,4 +54,4 @@ class SummFlash extends React.Component {
     }
 }
 
-export default SummFlash;
+export default SummonerSpell;
