@@ -19,8 +19,15 @@ function LaneSummonerTimer(props) {
                 </Box>
 
                 {/*Selected Summoner Spells*/}
-                <SummFlash/>
-                <SummFlash/>
+                {props.summFlash ? <SummFlash/> : null}
+                {/*{props.summIgnite ? <SummIgnite/> : null}*/}
+                {/*{props.summTeleport ? <SummTeleport/> : null}*/}
+                {/*{props.summGhost ? <SummGhost/> : null}*/}
+                {/*{props.summHeal ? <SummHeal/> : null}*/}
+                {/*{props.summExhaust ? <SummExhaust/> : null}*/}
+                {/*{props.summBarrier ? <SummBarrier/> : null}*/}
+                {/*{props.summCleanse ? <SummCleanse/> : null}*/}
+                {/*{props.summSmite ? <SummSmite/> : null}*/}
             </Box>
         </Fragment>
     );
