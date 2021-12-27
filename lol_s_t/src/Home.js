@@ -12,13 +12,13 @@ function Home() {
 
     return (
         <Fragment>
-            <Main fill="vertical" direction="column" justify="start" align="center">
+            <Main fill="vertical" direction="column" justify="start" align="center" overflow="hidden">
                 <HeaderBar/>
                 <LaneSummoner lane={"Top"} laneIcon={TopIcon}/>
-                {/*<LaneSummoner lane={"Jungle"} laneIcon={JgIcon}/>*/}
-                {/*<LaneSummoner lane={"Mid"} laneIcon={MidIcon}/>*/}
-                {/*<LaneSummoner lane={"Bot"} laneIcon={BotIcon}/>*/}
-                {/*<LaneSummoner lane={"Support"} laneIcon={SuppIcon}/>*/}
+                <LaneSummoner lane={"Jungle"} laneIcon={JgIcon}/>
+                <LaneSummoner lane={"Mid"} laneIcon={MidIcon}/>
+                <LaneSummoner lane={"Bot"} laneIcon={BotIcon}/>
+                <LaneSummoner lane={"Support"} laneIcon={SuppIcon}/>
             </Main>
         </Fragment>
     );

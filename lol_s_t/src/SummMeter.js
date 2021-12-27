@@ -18,7 +18,7 @@ function SummMeter(props) {
         clearTimeout(timer.current);
     }, [],);
 
-    return (<Meter type={"bar"} max={props.maxBarValue} thickness={"small"} size={"small"}
+    return (<Meter type={"bar"} max={props.maxBarValue} thickness={"small"} size={"xsmall"}
                    values={[{
                        value,
                        color: value > props.barBp1 ? 'status-ok' :
