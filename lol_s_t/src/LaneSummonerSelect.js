@@ -1,9 +1,7 @@
-import React, {Fragment, useState} from "react";
-import {Box, CheckBox, CheckBoxGroup, Image, Text} from "grommet";
-import SummFlash from "./SummFlash";
+import React, {Fragment} from "react";
+import {Box, CheckBox, Image, Text} from "grommet";
 
 function LaneSummonerSelect(props) {
-
     return (
         <Fragment>
             {/*Role Row*/}

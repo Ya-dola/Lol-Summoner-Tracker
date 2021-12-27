@@ -1,5 +1,5 @@
-import React, {Fragment, useEffect, useRef, useState} from "react";
-import {Box, Clock, Image, Meter} from "grommet";
+import React, {Fragment} from "react";
+import {Box, Clock, Image} from "grommet";
 import FlashIcon from "./summs_icons/flash.png";
 import SummMeter from "./SummMeter";
 
@@ -53,7 +53,6 @@ class SummFlash extends React.Component {
             </Fragment>
         );
     }
-
 }
 
 export default SummFlash;
