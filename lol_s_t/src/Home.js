@@ -70,44 +70,6 @@ function Home() {
         <Fragment>
             <Main fill="vertical" direction="column" justify="start" align="center" overflow="hidden">
 
-                {/*Start Game Button*/}
-                {/*<StartGameButton*/}
-                {/*    // Top Summoner Spell States*/}
-                {/*    summsTopFlash={summsTopFlash.valueOf()} summsTopIgnite={summsTopIgnite.valueOf()}*/}
-                {/*    summsTopTeleport={summsTopTeleport.valueOf()} summsTopGhost={summsTopGhost.valueOf()}*/}
-                {/*    summsTopHeal={summsTopHeal.valueOf()} summsTopExhaust={summsTopExhaust.valueOf()}*/}
-                {/*    summsTopBarrier={summsTopBarrier.valueOf()} summsTopCleanse={summsTopCleanse.valueOf()}*/}
-                {/*    summsTopSmite={summsTopSmite.valueOf()}*/}
-
-                {/*    // Jg Summoner Spell States*/}
-                {/*    summsJgFlash={summsJgFlash.valueOf()} summsJgIgnite={summsJgIgnite.valueOf()}*/}
-                {/*    summsJgTeleport={summsJgTeleport.valueOf()} summsJgGhost={summsJgGhost.valueOf()}*/}
-                {/*    summsJgHeal={summsJgHeal.valueOf()} summsJgExhaust={summsJgExhaust.valueOf()}*/}
-                {/*    summsJgBarrier={summsJgBarrier.valueOf()} summsJgCleanse={summsJgCleanse.valueOf()}*/}
-                {/*    summsJgSmite={summsJgSmite.valueOf()}*/}
-
-                {/*    // Mid Summoner Spell States*/}
-                {/*    summsMidFlash={summsMidFlash.valueOf()} summsMidIgnite={summsMidIgnite.valueOf()}*/}
-                {/*    summsMidTeleport={summsMidTeleport.valueOf()} summsMidGhost={summsMidGhost.valueOf()}*/}
-                {/*    summsMidHeal={summsMidHeal.valueOf()} summsMidExhaust={summsMidExhaust.valueOf()}*/}
-                {/*    summsMidBarrier={summsMidBarrier.valueOf()} summsMidCleanse={summsMidCleanse.valueOf()}*/}
-                {/*    summsMidSmite={summsMidSmite.valueOf()}*/}
-
-                {/*    // Bot Summoner Spell States*/}
-                {/*    summsBotFlash={summsBotFlash.valueOf()} summsBotIgnite={summsBotIgnite.valueOf()}*/}
-                {/*    summsBotTeleport={summsBotTeleport.valueOf()} summsBotGhost={summsBotGhost.valueOf()}*/}
-                {/*    summsBotHeal={summsBotHeal.valueOf()} summsBotExhaust={summsBotExhaust.valueOf()}*/}
-                {/*    summsBotBarrier={summsBotBarrier.valueOf()} summsBotCleanse={summsBotCleanse.valueOf()}*/}
-                {/*    summsBotSmite={summsBotSmite.valueOf()}*/}
-
-                {/*    // Supp Summoner Spell States*/}
-                {/*    summsSuppFlash={summsSuppFlash.valueOf()} summsSuppIgnite={summsSuppIgnite.valueOf()}*/}
-                {/*    summsSuppTeleport={summsSuppTeleport.valueOf()} summsSuppGhost={summsSuppGhost.valueOf()}*/}
-                {/*    summsSuppHeal={summsSuppHeal.valueOf()} summsSuppExhaust={summsSuppExhaust.valueOf()}*/}
-                {/*    summsSuppBarrier={summsSuppBarrier.valueOf()} summsSuppCleanse={summsSuppCleanse.valueOf()}*/}
-                {/*    summsSuppSmite={summsSuppSmite.valueOf()}*/}
-                {/*/>*/}
-
                 {/*Top Select Summoners*/}
                 <LaneSummonerSelect lane={"Top"} laneIcon={TopIcon}
                                     summsFlash={summsTopFlash} setSummsFlash={setSummsTopFlash}
