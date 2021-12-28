@@ -14,7 +14,7 @@ function Home() {
     // Top Summoner Spells
     const [summsTopFlash, setSummsTopFlash] = useState(true);
     const [summsTopIgnite, setSummsTopIgnite] = useState(false);
-    const [summsTopTeleport, setSummsTopTeleport] = useState(false);
+    const [summsTopTeleport, setSummsTopTeleport] = useState(true);
     const [summsTopGhost, setSummsTopGhost] = useState(false);
     const [summsTopHeal, setSummsTopHeal] = useState(false);
     const [summsTopExhaust, setSummsTopExhaust] = useState(false);
@@ -31,11 +31,11 @@ function Home() {
     const [summsJgExhaust, setSummsJgExhaust] = useState(false);
     const [summsJgBarrier, setSummsJgBarrier] = useState(false);
     const [summsJgCleanse, setSummsJgCleanse] = useState(false);
-    const [summsJgSmite, setSummsJgSmite] = useState(false);
+    const [summsJgSmite, setSummsJgSmite] = useState(true);
 
     // Mid Summoner Spells
     const [summsMidFlash, setSummsMidFlash] = useState(true);
-    const [summsMidIgnite, setSummsMidIgnite] = useState(false);
+    const [summsMidIgnite, setSummsMidIgnite] = useState(true);
     const [summsMidTeleport, setSummsMidTeleport] = useState(false);
     const [summsMidGhost, setSummsMidGhost] = useState(false);
     const [summsMidHeal, setSummsMidHeal] = useState(false);
@@ -49,7 +49,7 @@ function Home() {
     const [summsBotIgnite, setSummsBotIgnite] = useState(false);
     const [summsBotTeleport, setSummsBotTeleport] = useState(false);
     const [summsBotGhost, setSummsBotGhost] = useState(false);
-    const [summsBotHeal, setSummsBotHeal] = useState(false);
+    const [summsBotHeal, setSummsBotHeal] = useState(true);
     const [summsBotExhaust, setSummsBotExhaust] = useState(false);
     const [summsBotBarrier, setSummsBotBarrier] = useState(false);
     const [summsBotCleanse, setSummsBotCleanse] = useState(false);
@@ -57,7 +57,7 @@ function Home() {
 
     // Supp Summoner Spells
     const [summsSuppFlash, setSummsSuppFlash] = useState(true);
-    const [summsSuppIgnite, setSummsSuppIgnite] = useState(false);
+    const [summsSuppIgnite, setSummsSuppIgnite] = useState(true);
     const [summsSuppTeleport, setSummsSuppTeleport] = useState(false);
     const [summsSuppGhost, setSummsSuppGhost] = useState(false);
     const [summsSuppHeal, setSummsSuppHeal] = useState(false);
