@@ -21,7 +21,7 @@ function LaneSummonerTimer(props) {
                 {/*Lane Summoner Information*/}
                 <Box align="center" justify="center" width="medium" height="small" direction="column" gap="medium"
                      responsive wrap overflow="hidden">
-                    <Image src={props.laneIcon} fit="contain" width={"80px"}/>
+                    <Image src={props.laneIcon} fit="contain" width={"70px"}/>
                     <Text textAlign="start" size="large">
                         {props.lane}
                     </Text>

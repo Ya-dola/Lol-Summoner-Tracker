@@ -36,7 +36,7 @@ class SummonerSpell extends React.Component {
                      gap="xxsmall" overflow="hidden" responsive wrap>
                     <Box align="center" justify="center" direction="column" width="medium"
                          overflow="hidden" alignSelf="center" pad="small" responsive wrap>
-                        <Image src={this.props.summIcon} fit="contain" width={"80px"}
+                        <Image src={this.props.summIcon} fit="contain" width={"70px"}
                                onClick={this.summClicked}/>
                     </Box>
                     {this.state.clicked ?
