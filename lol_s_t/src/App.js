@@ -4,14 +4,18 @@ import {grommet, Grommet} from 'grommet';
 import HeaderBar from "./HeaderBar";
 import Home from "./Home";
 import GameTimers from "./GameTimers";
+import {deepMerge} from "grommet/utils";
+import {lol_s_t_theme} from "./lol_s_t_theme";
 
 // import './App.css';
 
 function App() {
     const [darkMode, setDarkMode] = useState(true);
 
+    const customTheme = deepMerge(grommet, lol_s_t_theme);
+
     return (
-        <Grommet theme={grommet} themeMode={darkMode ? "dark" : "light"} full={"min"}>
+        <Grommet theme={customTheme} themeMode={darkMode ? "dark" : "light"} full={"min"}>
             <BrowserRouter>
                 <HeaderBar darkMode={darkMode} setDarkMode={setDarkMode}/>
                 <Routes>
