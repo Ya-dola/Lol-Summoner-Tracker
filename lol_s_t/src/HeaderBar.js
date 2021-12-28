@@ -13,7 +13,7 @@ function HeaderBar() {
                     <HomeRounded size="large"/>
                 </Link>
                 <Text textAlign="center" size="large">
-                    League of Legends Summoner Tracker
+                    LoL Summs Tracker
                 </Text>
                 <Blank/>
             </Header>
