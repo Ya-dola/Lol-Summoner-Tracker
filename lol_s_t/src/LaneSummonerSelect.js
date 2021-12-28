@@ -5,21 +5,22 @@ function LaneSummonerSelect(props) {
     return (
         <Fragment>
             {/*Role Row*/}
-            <Box align="center" justify="center" direction="row" pad="small" width="large" margin="xxxsmall"
-                 overflow="hidden" border={"horizontal"} fill={"horizontal"} responsive>
+            <Box align="center" justify="center" direction="row" pad="small" width="large" height={"auto"}
+                 margin="xxxsmall" overflow="hidden" border={"horizontal"} fill={"horizontal"} responsive>
 
                 {/*Lane Summoner Information*/}
-                <Box align="center" justify="center" width="medium" height="small" direction="column" gap="medium"
-                     overflow="hidden" responsive wrap>
-                    <Image src={props.laneIcon} fit="contain" width={"80px"}/>
+                <Box align="center" justify="center" width="medium" height={"auto"} direction="column"
+                     gap="medium" overflow="hidden" responsive>
+                    <Image src={props.laneIcon} fit="contain" width={"70px"}/>
                     <Text textAlign="start" size="large">
                         {props.lane}
                     </Text>
                 </Box>
 
                 {/*Summoner Spells Checkbox*/}
-                <Box align="left" justify="center" width="medium" height="auto" direction="column" gap="small"
-                     overflow="hidden" responsive wrap>
+                <Box align="start" justify="center" width="medium" height="auto" direction="column" gap="small"
+                     pad={"small"}
+                     overflow="hidden" responsive>
                     <CheckBox label={"Flash"} checked={props.summsFlash}
                               onChange={(event) => {
                                   props.setSummsFlash(event.target.checked);
@@ -40,6 +41,11 @@ function LaneSummonerSelect(props) {
                               onChange={(event) => {
                                   props.setSummsHeal(event.target.checked);
                               }}/>
+                </Box>
+
+                <Box align="start" justify="center" width="medium" height="auto" direction="column" gap="small"
+                     pad={"small"}
+                     overflow="hidden" responsive>
                     <CheckBox label={"Exhaust"} checked={props.summsExhaust}
                               onChange={(event) => {
                                   props.setSummsExhaust(event.target.checked);

@@ -1,21 +1,24 @@
 import {Fragment} from "react";
 import {Link} from "react-router-dom";
-import {Blank, HomeRounded} from "grommet-icons";
-import {Header, Text} from "grommet";
+import {Blank, HomeRounded, Moon, Sun} from "grommet-icons";
+import {Button, Header, Text} from "grommet";
 
-function HeaderBar() {
+function HeaderBar(props) {
     return (
         <Fragment>
-            <Header align="center" direction="row" justify="between" gap="medium" pad="small"
-                    background={{"color": "graph-2", "dark": true}} fill="horizontal" flex={false}
-                    overflow="hidden">
+            <Header pad="small" fill="horizontal" overflow="hidden" background={{"color": "graph-2"}}>
                 <Link to={"/"}>
                     <HomeRounded size="large"/>
                 </Link>
                 <Text textAlign="center" size="large">
                     LoL Summs Tracker
                 </Text>
-                <Blank/>
+
+                {/*Dark Mode Changing Button */}
+                <Button icon={props.darkMode ? <Sun size={"large"}/> : <Moon size={"large"}/>}
+                        onClick={() => {
+                            props.setDarkMode(!props.darkMode);
+                        }}/>
             </Header>
         </Fragment>
     );

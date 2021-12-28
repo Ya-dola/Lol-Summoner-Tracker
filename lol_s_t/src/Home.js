@@ -1,6 +1,5 @@
 import React, {Fragment, useState} from 'react';
 import {Main} from "grommet";
-import HeaderBar from "./HeaderBar";
 import LaneSummonerSelect from "./LaneSummonerSelect";
 import StartGameButton from "./StartGameButton";
 import TopIcon from "./pos_icons/icon-position-top.png"
@@ -70,9 +69,6 @@ function Home() {
     return (
         <Fragment>
             <Main fill="vertical" direction="column" justify="start" align="center" overflow="hidden">
-                <HeaderBar/>
-                {/*<LaneSummonerTimer lane={"Top"} laneIcon={TopIcon}/>*/}
-
 
                 {/*Start Game Button*/}
                 <StartGameButton

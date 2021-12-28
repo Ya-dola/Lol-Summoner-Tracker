@@ -1,6 +1,5 @@
 import {Fragment} from "react";
 import LaneSummonerTimer from "./LaneSummonerTimer";
-import HeaderBar from "./HeaderBar";
 import GameSetupButton from "./GameSetupButton";
 import {Main} from "grommet";
 import {useLocation} from "react-router-dom";
@@ -15,8 +14,7 @@ function GameTimers() {
 
     return (
         <Fragment>
-            <Main fill="vertical" direction="column" justify="start" align="center" overflow="hidden">
-                <HeaderBar/>
+            <Main fill="vertical" direction="column" justify="start" align="center" overflow="hidden" responsive>
 
                 {/*Top Summoner Timer*/}
                 <LaneSummonerTimer lane={"Top"} laneIcon={TopIcon}

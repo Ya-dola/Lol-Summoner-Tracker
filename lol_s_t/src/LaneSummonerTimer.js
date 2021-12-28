@@ -10,17 +10,18 @@ import ExhaustIcon from "./summs_icons/exhaust.png";
 import BarrierIcon from "./summs_icons/barrier.png";
 import CleanseIcon from "./summs_icons/cleanse.png";
 import SmiteIcon from "./summs_icons/smite.png";
+import {Blank} from "grommet-icons";
 
 function LaneSummonerTimer(props) {
     return (
         <Fragment>
             {/*Role Row*/}
-            <Box align="center" justify="center" direction="row" pad="small" width="large" margin="xxxsmall"
-                 overflow="hidden" border={"horizontal"} fill={"horizontal"} responsive>
+            <Box align="center" justify="center" direction="row" pad="small" width="large" height={"small"}
+                 margin="xxxsmall" overflow="hidden" border={"horizontal"} fill={"horizontal"} responsive>
 
                 {/*Lane Summoner Information*/}
-                <Box align="center" justify="center" width="medium" height="small" direction="column" gap="medium"
-                     responsive wrap overflow="hidden">
+                <Box align="center" justify="center" width="medium" height={"auto"} direction="column" gap="medium"
+                     responsive overflow="hidden">
                     <Image src={props.laneIcon} fit="contain" width={"70px"}/>
                     <Text textAlign="start" size="large">
                         {props.lane}

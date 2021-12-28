@@ -17,7 +17,7 @@ function SummMeter(props) {
     }, [],);
 
     return (
-        <Meter type={"bar"} max={props.maxBarValue} thickness={"small"} size={"xsmall"} background={"status-disabled"}
+        <Meter type={"bar"} max={props.maxBarValue} thickness={"small"} size={"60%"} background={"status-disabled"}
                values={[{
                    value,
                    color: value > props.barBp1 ? 'status-ok' :
