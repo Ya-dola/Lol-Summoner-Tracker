@@ -11,7 +11,7 @@ function LaneSummonerSelect(props) {
                 {/*Lane Summoner Information*/}
                 <Box align="center" justify="center" width="medium" height="small" direction="column" gap="medium"
                      overflow="hidden" responsive wrap>
-                    <Image src={props.laneIcon} fit="contain" width={"100px"}/>
+                    <Image src={props.laneIcon} fit="contain" width={"80px"}/>
                     <Text textAlign="start" size="large">
                         {props.lane}
                     </Text>
