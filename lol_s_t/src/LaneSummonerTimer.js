@@ -10,7 +10,6 @@ import ExhaustIcon from "./summs_icons/exhaust.png";
 import BarrierIcon from "./summs_icons/barrier.png";
 import CleanseIcon from "./summs_icons/cleanse.png";
 import SmiteIcon from "./summs_icons/smite.png";
-import {Blank} from "grommet-icons";
 
 function LaneSummonerTimer(props) {
     return (
@@ -42,7 +41,7 @@ function LaneSummonerTimer(props) {
 
                 {/*Teleport*/}
                 {props.summTeleport ?
-                    <SummonerSpell summIcon={TeleportIcon} time={"T00:04:45"} maxBarValue={285} barValue={284}
+                    <SummonerSpell summIcon={TeleportIcon} time={"T00:05:00"} maxBarValue={300} barValue={299}
                                    barBp1={120} barBp2={60}/> : null}
 
                 {/*Ghost*/}

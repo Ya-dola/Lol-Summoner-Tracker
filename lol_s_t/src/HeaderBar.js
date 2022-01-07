@@ -1,6 +1,6 @@
 import {Fragment} from "react";
 import {Link} from "react-router-dom";
-import {Blank, HomeRounded, Moon, Sun} from "grommet-icons";
+import {HomeRounded, Moon, Sun} from "grommet-icons";
 import {Button, Header, Text} from "grommet";
 
 function HeaderBar(props) {
